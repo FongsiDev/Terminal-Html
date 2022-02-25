@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Terminal Tutorial</title>
+<link rel='stylesheet' href='../terminal.css' />
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono">
+<meta charset="utf-8">
+</head>
+<body>
+<div id="terminal" data-termynal>
+<span data-ty="input">npm init</span>
+<span data-ty>This utility will walk you through creating a package.json file.<br>
+It only covers the most common items, and tries to guess sensible defaults.<br><br>
+See `npm help init` for definitive documentation on these fields<br>
+and exactly what they do.<br><br>
+Use `npm install <pkg>` afterwards to install a package and<br>
+save it as a dependency in the package.json file.<br><br>
+Press ^C at any time to quit.<br>
+</span>
+
+<span data-ty="input" data-ty-prompt="package name:">(testing)</span>
+<span data-ty="input" data-ty-prompt="version:">(1.0.0)</span>
+<span data-ty="input" data-ty-prompt="description:"></span>
+<span data-ty="input" data-ty-prompt="entry point:">(index.js)</span>
+<span data-ty="input" data-ty-prompt="test command:"></span>
+<span data-ty="input" data-ty-prompt="git repository:"></span>
+<span data-ty="input" data-ty-prompt="keywords:"></span>
+<span data-ty="input" data-ty-prompt="author:"></span>
+<span data-ty="input" data-ty-prompt="license: (MIT)">MIT</span>
+
+<span data-ty>{<br />
+&nbsp; &quot;name&quot;: &quot;testing&quot;,<br />
+&nbsp; &quot;version&quot;: &quot;1.0.0&quot;,<br />
+&nbsp; &quot;description&quot;: &quot;&quot;,<br />
+&nbsp; &quot;main&quot;: &quot;index.js&quot;,<br />
+&nbsp; &quot;scripts&quot;: {<br />
+&nbsp; &nbsp; &quot;test&quot;: &quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;<br />
+&nbsp; },<br />
+&nbsp; &quot;author&quot;: &quot;&quot;,<br />
+&nbsp; &quot;license&quot;: &quot;ISC&quot;<br />
+}</span>
+<span data-ty="input" data-ty-prompt="Is this OK? (yes)">yes</span>
+<!--===================================================-->
+
+<span data-ty="input">npm install :v</span>
+<span data-ty="progress"></span>
+<span data-ty>added 1 packages, and audited 1 packages<br><br>
+1 package is looking for funding<br>
+run `npm fund` for details<br><br>
+found 0 vulnerabilities
+</span>
+</div>
+
+<!--===================================================-->
+<script data-termynal-container='#terminal' src='../terminal.js'></script>
+</body>
+</html>
